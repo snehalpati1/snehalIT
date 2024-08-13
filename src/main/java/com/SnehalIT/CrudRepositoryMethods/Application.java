@@ -93,4 +93,8 @@ public class Application {
 //		studentController.deleteAllRecords();
 	}
 
+	// After Task
+	public String afternoon() {
+			return "TaskCompleted";
+
 }
