@@ -77,5 +77,8 @@ public class StudentServiceImpl implements StudentServiceI{
 	public void deleteAllRecords() {
 		studentRepository.deleteAll();
 		
-}
+}//This is Witten by QA Team
+	public TestingTeam() {
+		System.out.println("THis is the QA tester team");
+	}
 }
