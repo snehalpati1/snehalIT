@@ -92,9 +92,20 @@ public class Application {
 //
 //		studentController.deleteAllRecords();
 	}
+	
+    public String Demo() {
+    	return "welcome";
+    }
+		
+	
+	
+
 
 	// After Task
 	public String afternoon() {
 			return "TaskCompleted";
 
+
+	}
 }
+
