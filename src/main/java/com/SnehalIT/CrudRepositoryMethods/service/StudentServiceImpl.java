@@ -77,8 +77,14 @@ public class StudentServiceImpl implements StudentServiceI{
 	public void deleteAllRecords() {
 		studentRepository.deleteAll();
 		
-}//This is Witten by QA Team
+}
+	//This is Witten by QA Team
 	public TestingTeam() {
 		System.out.println("THis is the QA tester team");
 	}
+	
+	//This is Witten by QA Team
+		public QATeam() {
+			System.out.println("THis is the QA tester team");
+		}
 }
