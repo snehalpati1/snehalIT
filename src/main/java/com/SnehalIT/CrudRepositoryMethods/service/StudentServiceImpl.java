@@ -77,11 +77,10 @@ public class StudentServiceImpl implements StudentServiceI {
 	@Override
 	public void deleteAllRecords() {
 		studentRepository.deleteAll();
-
 	}
 
 	// This is Witten by QA Team
-	public void TestingTeam() {
+	public void TestingTeam1() {
 		System.out.println("THis is the QA tester team");
 	}
 
@@ -92,6 +91,33 @@ public class StudentServiceImpl implements StudentServiceI {
 
 	// this is commit by the dev
 	public void qaCodeconflicts() {
+		System.out.println("THis is the QA testercode team");
+   }
+
+	//This is Witten by QA Team
+	public void TestingTeam() {
+		System.out.println("THis is the QA tester team");
+	}
+	
+	//This is Witten by QA Team
+		public void QATeams() {
+			System.out.println("THis is the QA tester team");
+		}
+
+
+
+	//this is commit by the dev
+	public void developerCode() {
 		System.out.println("This is developer code");
 	}
+
+	
+	//this is commit by the dev
+		public void deveCode() {
+			System.out.println("This is developer code");
+}
+		// this is commit by the dev
+		public void qaCodeconflictsDemos() {
+			System.out.println("THis is the QA testercode team");
+}
 }
