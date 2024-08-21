@@ -78,6 +78,7 @@ public class StudentServiceImpl implements StudentServiceI{
 		studentRepository.deleteAll();
 		
 }
+<<<<<<< HEAD
 	//This is Witten by QA Team
 	public TestingTeam() {
 		System.out.println("THis is the QA tester team");
@@ -88,3 +89,10 @@ public class StudentServiceImpl implements StudentServiceI{
 			System.out.println("THis is the QA tester team");
 		}
 }
+=======
+	//this is commit by the dev
+	public void developerCode() {
+		System.out.println("This is developer code");
+	}
+}
+>>>>>>> 05fe7d0893b52247dd76505fb4fd90f5cd128fc6
