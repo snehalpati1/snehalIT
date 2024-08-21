@@ -106,4 +106,6 @@ public class StudentServiceImpl implements StudentServiceI{
 		//this is commit by the developer
 			public void deveCodeScenariosConflicts() {
 				System.out.println("This is developer code");
+			}
 }
+
