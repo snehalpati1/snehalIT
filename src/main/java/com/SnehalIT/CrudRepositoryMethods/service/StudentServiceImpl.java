@@ -7,24 +7,25 @@ import org.springframework.stereotype.Service;
 
 import com.SnehalIT.CrudRepositoryMethods.dao.StudentRepositroy;
 import com.SnehalIT.CrudRepositoryMethods.entity.Student;
+
 @Service
-public class StudentServiceImpl implements StudentServiceI{
+public class StudentServiceImpl implements StudentServiceI {
 
 	@Autowired
 	private StudentRepositroy studentRepository;
 
 	@Override
 	public Student saveStudent(Student stu) {
-		Student student=studentRepository.save(stu);
+		Student student = studentRepository.save(stu);
 		return student;
 	}
 
 	@Override
 	public List<Student> saveAllStudents(List<Student> students) {
-		List<Student>saveAll=(List<Student>)studentRepository.saveAll(students);
+		List<Student> saveAll = (List<Student>) studentRepository.saveAll(students);
 		return saveAll;
 	}
-	
+
 	@Override
 	public List<Student> getAllRecords() {
 		List<Student> all = (List<Student>) studentRepository.findAll();
@@ -33,13 +34,13 @@ public class StudentServiceImpl implements StudentServiceI{
 
 	@Override
 	public List<Student> getAllStuMPK(List<Integer> list) {
-	List<Student> allById = (List<Student>) studentRepository.findAllById(list);
+		List<Student> allById = (List<Student>) studentRepository.findAllById(list);
 		return allById;
 	}
 
 	@Override
 	public boolean existsByIdStu(Integer id) {
-	boolean existsById = studentRepository.existsById(id);
+		boolean existsById = studentRepository.existsById(id);
 		return existsById;
 	}
 
@@ -51,48 +52,46 @@ public class StudentServiceImpl implements StudentServiceI{
 
 	@Override
 	public Student getStudentById(Integer id) {
-	Student byId = studentRepository.findById(id).get();
+		Student byId = studentRepository.findById(id).get();
 		return byId;
 	}
 
 	@Override
 	public void deleteRecordById(Integer id) {
-	studentRepository.deleteById(id);
-		
+		studentRepository.deleteById(id);
+
 	}
 
 	@Override
 	public void deleteRecordByObject(Student stu) {
-	studentRepository.delete(stu);
-		
+		studentRepository.delete(stu);
+
 	}
 
 	@Override
 	public void deleteStuByMPK(List<Integer> list) {
-	studentRepository.deleteAllById(list);
-		
+		studentRepository.deleteAllById(list);
+
 	}
 
 	@Override
 	public void deleteAllRecords() {
 		studentRepository.deleteAll();
-		
-}
-<<<<<<< HEAD
-	//This is Witten by QA Team
-	public TestingTeam() {
+
+	}
+
+	// This is Witten by QA Team
+	public void TestingTeam() {
 		System.out.println("THis is the QA tester team");
 	}
-	
-	//This is Witten by QA Team
-		public QATeam() {
-			System.out.println("THis is the QA tester team");
-		}
-}
-=======
-	//this is commit by the dev
-	public void developerCode() {
+
+	// This is Witten by QA Team
+	public void qacode() {
+		System.out.println("THis is the QA testercode team");
+	}
+
+	// this is commit by the dev
+	public void qaCodeconflicts() {
 		System.out.println("This is developer code");
 	}
 }
->>>>>>> 05fe7d0893b52247dd76505fb4fd90f5cd128fc6
